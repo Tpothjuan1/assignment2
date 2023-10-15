@@ -1,0 +1,54 @@
+1)Paste the console output you saved at the end of step 3.C
+
+$ git commit -m "Adding docs directory and status file"
+[master bf33345] Adding docs directory and status file
+ 1 file changed, 5 insertions(+)
+ create mode 100644 docs/status.txt
+
+2)How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+
+4 commits so far. I used "git log --all" to find this.
+
+3)When was the README.md  file modified last? Write the git command you used to get this information
+
+The last time the file README.md was modified was  Sun Oct 15 13:10:40 2023.
+I found this by running "git log -1 README.md"
+
+4) Mention two reasons why branches are used in a Git repository
+
+* Branches are the go-to option used to introduce new features or fix bugs without affecting the main branch
+* Branches can be used to separate different work environments, like production, development and staging.
+
+5) What is the difference between git log and git status?
+
+Git log shows a history of commits within the repo that includes the author, date and time, and the message of the author. 
+On the other hand, git status shows the current state of the branch, what files have been modified and not committed and which
+filed have or haven't been added to commit.
+
+6) What command would you use to see the commits where “Vehicle.h” was one of the committed files?
+
+git log Vehicle.h
+
+7) What command would you use to see the commits whose commit message contains the word “file”? 
+
+git log --all -i --grep="file"
+
+8) In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation?
+
+-Inheritance: The core concept of OOP in which one class (child) acquires methods and attributed to another class (parent)
+
+-Polymorphism: It's the feature of an object that allows it to behave differently depending on the caller class.
+
+-Encapsulation: It's the concept of enclosing the data along with the methods of the object withing a single entity.
+
+9) What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+
+In the integration manager workflow, developers push to their own public/private repositories. On the other hand, in the dictator and lieutenants workflow model, developers push their changes to lieutenant repositories. 
+
+10) How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow?
+
+The centralized workflow has a single point of review/conflict which is the central repository. All the 100 developers are making changes possibly several times a day, this means there will be a great amount of conflicts that arise and have to be solved by developers themselves. Thus, reducing the amount of time spent in actual coding. Whereas in the dictator and lieutenant workflow, the points of conflict are increased into further subdivided units with a lower conflict possibility. 
+
+
+Dates of Git Lab Tutorials completion: 10/15/2023
+Date GitHub Account setup: 02/26/2020
